@@ -15,7 +15,7 @@ An OpenFaaS of-watchdog function written for Deno.
 ./deploy.sh
 ```
 
-## Template
+## [Template](https://github.com/austinrivas/deno-http-template)
 
 This function is base on the OpenFaaS [deno-http-template](https://github.com/austinrivas/deno-http-template).
 
