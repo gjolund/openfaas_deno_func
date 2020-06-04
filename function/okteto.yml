@@ -2,7 +2,7 @@
 name: deno-hello       
 labels:
   faas_function: deno-hello
-image: austinrivas/deno-http-okteto:latest
+image: austinrivas/deno-http-okteto:stable
 command:
   - bash
 workdir: /home/app
