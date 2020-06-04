@@ -17,7 +17,7 @@ An OpenFaaS of-watchdog function written for Deno.
 
 ## [Template](https://github.com/austinrivas/deno-http-template)
 
-This function is base on the OpenFaaS [deno-http-template](https://github.com/austinrivas/deno-http-template).
+This function is based on the OpenFaaS [deno-http-template](https://github.com/austinrivas/deno-http-template).
 
 This template provides a thin wrapper around the [Deno Http Server](https://doc.deno.land/https/deno.land/std/http/server.ts) provided by the Deno stdlib. The wrapper implementation closely mirrors the Deno [serve](https://doc.deno.land/https/deno.land/std/http/server.ts#serve) function.
 
