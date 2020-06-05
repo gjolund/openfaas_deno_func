@@ -6,13 +6,13 @@ An OpenFaaS of-watchdog function written for Deno.
 ## Installation
 
 ```sh
-./install.sh
+faas template pull https://github.com/austinrivas/deno-http-template
 ```
 
 ## Deployment
 
 ```sh
-./deploy.sh
+faas up -f function.yml --gateway $GATEWAY_URL
 ```
 
 ## [Template](https://github.com/austinrivas/deno-http-template)
