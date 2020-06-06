@@ -27,6 +27,14 @@ This repo also includes vscode debug configurations.
   - Run Tests
   - Debug Current Test File
   - Debug Seleted Test Case
+  
+### Linting
+
+Deno also provides a built in code linter.
+
+```sh
+deno fmt
+```
 
 ## Deployment
 
