@@ -21,7 +21,7 @@ Deno ships with a built in test runner
 
 ```sh
 deno test --allow-net
-``
+```
 
 This repo also includes vscode debug configurations.
   - Run Tests
