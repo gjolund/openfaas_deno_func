@@ -9,6 +9,25 @@ An OpenFaaS of-watchdog function written for Deno.
 faas template pull https://github.com/austinrivas/deno-http-template
 ```
 
+## Create Function
+
+```sh
+faas new <name> --lang deno-http
+```
+
+## Testing
+
+Deno ships with a built in test runner
+
+```sh
+deno test --allow-net
+``
+
+This repo also includes vscode debug configurations.
+  - Run Tests
+  - Debug Current Test File
+  - Debug Seleted Test Case
+
 ## Deployment
 
 ```sh
@@ -30,3 +49,5 @@ The function handler in this example is as simple as possible. It merely consume
 ## Extras
 
 This repo also contains an [Okteto Remote Development Configuration](https://github.com/austinrivas/openfaas_deno_func/blob/master/function/okteto.yml) for use on the [Okteto Platform](https://okteto.com/).
+
+A [Test and Enforce Deno Format github action](https://github.com/austinrivas/openfaas_deno_func/blob/master/.github/workflows/test-fmt-deno.yml) is included that will trigger on pull request. This action runs the deno tests and throws an error if `deno fmt` returns changes.
