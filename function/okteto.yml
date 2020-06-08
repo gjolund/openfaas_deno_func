@@ -22,8 +22,8 @@ securityContext:
     # enables us to run the debugger inside the pod
     - SYS_PTRACE
 environment:
-  # overrides the one set by openfaas, enabling hot reload
-  - fprocess=deno run --allow-net --allow-env main.ts
+  # overrides the one set by openfaas
+  - fprocess=deno run --inspect --allow-net --allow-env main.ts
 forward:
   - 8080:8080
-  - 2345:2345
+  - 9229:9229
