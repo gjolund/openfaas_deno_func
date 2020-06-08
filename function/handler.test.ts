@@ -9,5 +9,5 @@ Deno.test("deno-hello:handler: exists", () => {
 Deno.test("deno-hello:handler: returns string messsage", async () => {
   const req = new ServerRequest();
   const response = await handler(req);
-  assertEquals(response.body, "Deno says Hello OpenFaaS!");
+  assertEquals(response.body, JSON.stringify({message: "Deno says Hello OpenFaaS!"}));
 });
