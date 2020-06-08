@@ -6,7 +6,7 @@ Deno.test("deno-hello:handler: exists", () => {
   assert(handler);
 });
 
-Deno.test("deno-hello:handler: returns string messsage", async () => {
+Deno.test("deno-hello:handler: returns string message", async () => {
   const req = new ServerRequest();
   const response = await handler(req);
   assertEquals(
