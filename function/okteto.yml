@@ -27,3 +27,10 @@ environment:
 forward:
   - 8080:8080
   - 9229:9229
+resources:
+  requests:
+    memory: "20Mi"
+    cpu: "100m"
+  limits:
+    memory: "0.5Gi"
+    cpu: "500m"
