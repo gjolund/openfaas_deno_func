@@ -7,4 +7,7 @@ functions:
     lang: deno-http
     handler: ./function
     image: austinrivas/deno-hello:latest
-
+configuration:
+  templates:
+    - name: deno-http
+      source: https://github.com/austinrivas/deno-http-template
