@@ -55,8 +55,7 @@ okteto up
  ✓  Files synchronized
     Namespace: austinrivas
     Name:      deno-hello
-    Forward:   3000 -> 3000
-               8080 -> 8080
+    Forward:   8080 -> 8080
                9229 -> 9229
 okteto> fwatchdog
 ```
