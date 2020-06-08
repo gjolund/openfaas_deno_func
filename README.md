@@ -23,7 +23,7 @@ Deno ships with a built in test runner
 deno test --allow-net
 ```
 
-This repo also includes vscode debug configurations.
+This repo also includes vscode debug configurations for local debugging.
   - Run Tests
   - Debug Current Test File
   - Debug Seleted Test Case
@@ -41,6 +41,29 @@ deno fmt
 ```sh
 faas up -f function.yml --gateway $GATEWAY_URL
 ```
+
+## Remote Debugging
+
+This function includes an `okteto.yml` function to facilitate remote dev and debugging.
+
+To launch to remote debugger you must start the debug process in oketeto.
+
+```bash
+cd function
+okteto up
+ ✓  Development environment activated
+ ✓  Files synchronized
+    Namespace: austinrivas
+    Name:      deno-hello
+    Forward:   3000 -> 3000
+               8080 -> 8080
+               9229 -> 9229
+okteto> fwatchdog
+```
+
+Once the debug session is listening you can attach to it from [chrome://inspect](chrome://inspect) and set breakpoints as required.
+
+When you are done debugging you should `exit` the okteto shell and run `okteto down` to restore the OpenFaaS function context.
 
 ## [Template](https://github.com/austinrivas/deno-http-template)
 
